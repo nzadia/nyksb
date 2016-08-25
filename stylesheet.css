@@ -1,0 +1,74 @@
+
+/* css for image carousel*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      margin: auto;
+      width: 800px;
+      height: 500px;
+      filter: blur(0.5px);
+    }
+  h3, p{color: #C60C30; font-weight: 800; font-size:20px;}
+/* css for dropdown menu */
+.dropbtn {
+  position:relative !important;
+    background-color: #fbefcc;
+    color: #fbefcc;
+    padding: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+#broadwayseventh{background-color: #EE352E;}
+#lexington {background-color: #00933C;}
+#flushing {background-color: #B933AD;}
+#eighthavenue {background-color: #0039A6;}
+#sixthavenue {background-color: #FF6319;}
+#nassaustreet {background-color: #996633;}
+#crosstown {background-color: #6CBE45;}
+#broadway {background-color: #FCCC0A;}
+#canarsie {background-color: #A7A9AC;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position:relative !important;
+    display: none;
+    /*position: absolute;*/
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,4);
+}
+
+.dropdown-content a {
+    position:relative !important;
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #bfbfbf}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+h1{border-bottom: 1px solid black; color:black;}
+
+#extra{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #00CED1;
+  padding: 4px;
+  font-size: 14px;
+  border: none;
+  color: #f9f9f9;
+}
+#border {border-top: 1px solid black;}
+#title {color: gray;font-family: Helvetica;}
+h2{font-family: Helvetica;}

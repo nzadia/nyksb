@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Fun Facts</title>
+<link rel = "stylesheet" href="stylesheet.css">
+</head>
+<style>
+html{background-color: #006983;}
+body {margin: 0; font-family: Helvetica;}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: rgb(0,0,0);*/
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay p {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #2a110e;
+    display: block;
+    transition: 0.3s;
+}
+.overlay p:hover, .overlay p:focus {color: #0e272a;}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay p {font-size: 15px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+#home {text-decoration:none;color: black;}
+</style>
+
+<body>
+<center>
+ <a href="index.html"><img src="img/header9.png" /> </a> <br><br>
+<!--Navigation bar-->
+<div class="dropdown">
+  <button id = "broadwayseventh" class="dropbtn">Broadway-Seventh Avenue Line</button>
+  <div class="dropdown-content">
+    <a href="1Train.html"><img src="img/1train.png"></img></a>
+    <a href="2Train.html"><img src="img/2train.png"></img></a>
+    <a href="3Train.html"><img src="img/3train.png"></img></a>
+  </div>
+</div>
+<div class="dropdown">
+  <button id = "lexington" class="dropbtn">Lexington Avenue Line</button>
+  <div class="dropdown-content">
+    <a href="4Train.html"><img src="img/4train.png"></img></a>
+    <a href="5Train.html"><img src="img/5train.png"></img></a>
+    <a href="6Train.html"><img src="img/6train.png"></img></a>
+  </div>
+</div>
+<div class="dropdown">
+  <button id = "flushing" class="dropbtn">Flushing Line</button>
+  <div class="dropdown-content">
+    <a href="7Train.html"><img src="img/7train.png"></img></a>
+  </div>
+</div>
+<div class="dropdown">
+  <button id = "eighthavenue" class="dropbtn">Eighth Avenue Line</button>
+  <div class="dropdown-content">
+    <a href="ATrain.html"><img src="img/Atrain.png"></img></a>
+    <a href="CTrain.html"><img src="img/Ctrain.png"></img></a>
+    <a href="ETrain.html"><img src="img/Etrain.png"></img></a>
+  </div>
+</div>
+<div class="dropdown">
+  <button id= "sixthavenue" class="dropbtn">Sixth Avenue Line</button>
+  <div class="dropdown-content">
+    <a href="BTrain.html"><img src="img/Btrain.png"></img></a>
+    <a href="DTrain.html"><img src="img/Dtrain.png"></img></a>
+    <a href="FTrain.html"><img src="img/Ftrain.png"></img></a>
+    <a href="MTrain.html"><img src="img/Mtrain.png"></img></a>
+  </div>
+</div>
+<div class="dropdown">
+  <button id = "nassaustreet" class="dropbtn">Nassau Street Line</button>
+  <div class="dropdown-content">
+    <a href="JZTrain.html"><img src="img/Jtrain.png"></img></a>
+    <a href="JZTrain.html"><img src="img/Ztrain.png"></img></a>
+  </div>
+</div>
+<div class="dropdown">
+  <button id="crosstown" class="dropbtn">Crosstown Line</button>
+  <div class="dropdown-content">
+    <a href="GTrain.html"><img src="img/Gtrain.png"></img></a>
+  </div>
+</div>
+<div class="dropdown">
+  <button id="broadway" class="dropbtn">Broadway Line</button>
+  <div class="dropdown-content">
+    <a href="NTrain.html"><img src="img/Ntrain.png"></img></a>
+    <a href="QTrain.html"><img src="img/Qtrain.png"></img></a>
+    <a href="RTrain.html"><img src="img/Rtrain.png"></img></a>
+  </div>
+</div>
+<div class="dropdown">
+  <button id="canarsie" class="dropbtn">Canarsie Line</button>
+  <div class="dropdown-content">
+    <a href="LTrain.html"><img src="img/Ltrain.png"></img></a>
+  </div>
+</div>
+<!--Overlay-->
+<div style="background-image:url(img/1train.png)" id="1" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The 1 train used to run with the 9 train. It was called the 1/9 service.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The deepest subway stop is the 1 train's 191st Street station. The platform is 180 feet below street level.</p>
+  </div>
+</div>
+<div style="background-image:url(img/2train.png)" id="2" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">Lenox Avenue Invert was completed in less than eight months. The $82 million project rebuilt the flooded invert (floor) of the Lenox Av 2  and 3 line between 110th and 116th Streets and restores the 116th Street station.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The 2 Train has 61 train stops and 71 (including limited rush hour service to New Lots Avenue).</p>
+  </div>
+</div>
+<div style="background-image:url(img/3train.png)" id="3" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The 1995 film Die Hard with a Vengeance features Simon Gruber (Jeremy Irons) planting a bomb on a 3 train in order to blow up the Wall Street station.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">From 1967–1979, the color of the bullet used to be light blue. </p>
+  </div>
+</div>
+<div style="background-image:url(img/4train.png)" id="4" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">86th St is the 10th busiest station in NYC.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The 4 train was once considered the worst train to be on in the 70s and 80s, especially during the night. People referred to it as "Mugger's Express". Crime became so bad that people took matters into their own hands to form the Guardian Angels.</p>
+  </div>
+</div>
+<div style="background-image:url(img/5train.png)" id="5" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The 5 train can run along eight different train lines in its service.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">In 1979, with the color coding of subway routes based on their trunk line in Manhattan, the 5 service's color was changed to apple green, as it goes via the Lexington Avenue Line in Manhattan.</p>
+  </div>
+</div>
+<div style="background-image:url(img/6train.png)" id="6" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">Due to the popularity of the book and movie The Taking of Pelham 123, train dispatchers generally avoid giving trains leaving Pelham Bay Park a 1:23 departure time.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">There is an abandoned station called City Hall. Due to the infrastructural shortfalls, as well as its proximity to the nearby Brooklyn Bridge station, passenger service was discontinued on December 31, 1945, although the station is still used as a turning loop for 6 trains.</p>
+  </div>
+</div>
+<div style="background-image:url(img/7train.png)" id="7" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The 7 train was the last train to get AC. 99% of trains received AC by 1993.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The northern end of the Mets-Willets Point station has a very long southbound side platform is abandoned and gated off.</p>
+  </div>
+</div>
+<div style="background-image:url(img/Atrain.png)" id="A" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The A train has a train route that consists of more than 31 miles.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The distance the Howard Beach/JFK Airport and Broad Channel stations in Queens is 3.5 miles.</p>
+  </div>
+</div>
+<div style="background-image:url(img/Btrain.png)" id="B" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav9()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">You can take 4, B or D trains to 161 St, and travel across the footbridge over Sedgwick Ave and the Major Deegan Expressway and see the abandoned Sedgwick Avenue and Jerome-Anderson Avenue stations. </p>
+    <p style="background: rgba(204, 204, 204, 0.5);"> The B train used to run in Queens in the 80s, along the current F line. </p>
+  </div>
+</div>
+<div style="background-image:url(img/Ctrain.png)" id="C" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav10()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">There's a pretty dark poem written on the ceiling of the tunnel from 42nd Street to Port Authority stations. It was made in 1991 and is called "The Commuter's Lament." </p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The abandoned track on one of the Hoyt-Schermerhorn Streets platform leads to the Court St station, which is home to the NYC Transit Museum.</p>
+  </div>
+</div>
+<div style="background-image:url(img/Dtrain.png)" id="D" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav11()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The D train line is considered to be the dirtiest line.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">At the 59th St-Columbus Circle station, the center of three island platforms has been closed since 1981 because trains can't easily open their doors on both sides simultaneously. </p>
+  </div>
+</div>
+<div style="background-image:url(img/Etrain.png)" id="E" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav12()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The E train used to run in Brooklyn on the train line that the A and C currently run on.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The E train has 32 trains and 34 other stops (including limited rush hour service to 179th Street).</p>
+  </div>
+</div>
+<div style="background-image:url(img/Ftrain.png)" id="F" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav13()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The Smith-Ninth streets station is the highest at 88 feet above street level.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);"> From 1967-79, the bullet logo was purple. </p>
+  </div>
+</div>
+<div style="background-image:url(img/Gtrain.png)" id="G" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav14()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">Michael Jackson filmed the music video for "Bad" at the Hoyt-Schermerhorn subway station. </p>
+    <p style="background: rgba(204, 204, 204, 0.5);">When express service on the Culver line ended in 1976, the lower level of the Bergen St station closed and fell into disrepair. </p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The G train is the only train that doesn’t have train stops in Manhattan. </p>
+  </div>
+</div>
+<div style="background-image:url(img/Jtrain.png)" id="J" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav15()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);"> Part of the Chambers Street was converted into the basement of the Municipal Archives. Another platform was removed to accommodate the expansion of Brooklyn Bridge station.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);"> It's the oldest remaining elevated train route. It opened in 1885, and was known at the time as part of the Brooklyn "El" lines.</p>
+  </div>
+</div>
+<div style="background-image:url(img/Ltrain.png)" id="L" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav16()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The L train is the cleanest train line.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The L, being a local train, was originally given the LL designation when letters were assigned to the BMT division. From 1928 to 1967, the same service was assigned the BMT number 16.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">L train’s ridership increased due to gentrification along the train line.</p>
+  </div>
+</div>
+<div style="background-image:url(img/Mtrain.png)" id="M" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav17()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The M train’s line was merged with the V and W train lines after those train services were discontinued in 2010.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);"> The September 11, 2001 attacks caused a temporary reduction of the M to a full-time shuttle until September 17. Then it was extended full-time over the BMT Sea Beach Line to Stillwell Avenue, replacing the N, until October 28.</p>
+  </div>
+</div>
+<div style="background-image:url(img/Ntrain.png)" id="N" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav18()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The route that is now the N was originally BMT service 4, known as the Sea Beach Line or Sea Beach Express.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">N trains that currently short-turn at 57th Street will be extended to 96th Street using the Second Avenue Subway when it opens.</p>
+  </div>
+</div>
+<div style="background-image:url(img/Qtrain.png)" id="Q" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav19()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">Next time when you go from Brooklyn to Manhattan on the Q train, keep a lookout for moving art called "Masstransiscope".</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The Q will be rerouted from 57th Street to 96th Street via the BMT 63rd Street Line and the IND Second Avenue Line when the first phase of the Second Avenue Subway opens in December 2016. </p>
+  </div>
+</div>
+<div style="background-image:url(img/Rtrain.png)" id="R" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav20()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">Before the Great Depression, a Second System was planned for the IND line to connect the Rockaways and midtown Manhattan. A full station and tracks were installed in Queens that were to connect to the Roosevelt Avenue-74th Street stop but were never used. You can see remnants where these tracks now dead-end at 78th Street.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">In 2004, Spider-Man 2 featured a fight and crash scene between Spider-Man and Doctor Octopus on an out-of-control elevated R train in Manhattan. In reality, the R is not elevated at all; the scenes involving the train were actually filmed in Chicago, on the Loop, and the trains depicted are 2200 Series "L" train cars (with blinker doors not sliding doors as in New York). </p>
+  </div>
+</div>
+<div style="background-image:url(img/Ztrain.png)" id="Z" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav21()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);">The Jamaica Line is more than 13 miles long.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">The actual shade of brown that signifies the J and Z line is known as "terra cotta brown."</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">When the Archer Avenue Line first opened, every subway car on the J and Z's fleet was completely graffiti-free, because the MTA hoped that Queens passengers would transfer to the J/Z from the E, F, and R. </p>
+  </div>
+</div>
+<div style="background-image:url(img/mtafunfactbackground.jpg)" id="MTA" class="overlay">
+  <p href="javascript:void(0)" class="closebtn" onclick="closeNav22()">&times;</p>
+  <div class="overlay-content">
+    <p style="background: rgba(204, 204, 204, 0.5);"> A doorway from a platform in the Times Square-42nd Street station used to lead straight into the Knickerbocker Hotel, where F. Scott Fitzgerald and co. attended lavish parties. Today the MTA owns the space behind the door.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);">There are the signal maintainers, who are trained at the Signals Learning Center in the 14th St and 8th Ave station, which has a signal light that actually changes color outside the door.</p>
+    <p style="background: rgba(204, 204, 204, 0.5);"> 58 Joralemon Street is not a home at all, but a secret subway exit and ventilation point disguised as a Greek Revival brownstone. </p>
+  </div>
+</div>
+<!--buttons/imgs-->
+<h2> Fun Facts</h2>
+<span onclick="openNav()">&#9776;<img style="width:200px;height:150px"src="img/1trainfunfact.jpg"/></span>
+<span onclick="openNav2()">&#9776; <img style="width:200px;height:150px"src="img/2trainfunfact.jpg"/></span>
+<span onclick="openNav3()">&#9776; <img style="width:200px;height:150px"src="img/3trainfunfact.jpg"/></span>
+<br>
+<span onclick="openNav4()">&#9776; <img style="width:200px;height:150px"src="img/4trainfunfact.jpg"/></span>
+<span onclick="openNav5()">&#9776; <img style="width:200px;height:150px"src="img/5trainfunfact.jpg"/></span>
+<span onclick="openNav6()">&#9776; <img style="width:200px;height:150px"src="img/6trainfunfact.jpg"/></span>
+<br>
+<span onclick="openNav7()">&#9776; <img style="width:200px;height:150px"src="img/7trainfunfact.jpg"/></span>
+<span onclick="openNav8()">&#9776; <img style="width:200px;height:150px"src="img/Atrainfunfact.jpg"/></span>
+<span onclick="openNav9()">&#9776; <img style="width:200px;height:150px"src="img/Btrainfunfact.jpg"/></span>
+<br>
+<span onclick="openNav10()">&#9776; <img style="width:200px;height:150px"src="img/Ctrainfunfact.jpg"/></span>
+<span onclick="openNav11()">&#9776; <img style="width:200px;height:150px"src="img/Dtrainfunfact.jpg"/></span>
+<span onclick="openNav12()">&#9776; <img style="width:200px;height:150px"src="img/Etrainfunfact.jpg"/></span>
+<br>
+<span onclick="openNav13()">&#9776; <img style="width:200px;height:150px"src="img/Ftrainfunfact.jpg"/></span>
+<span onclick="openNav14()">&#9776; <img style="width:200px;height:150px"src="img/Gtrainfunfact.jpg"/></span>
+<span onclick="openNav15()">&#9776; <img style="width:200px;height:150px"src="img/Jtrainfunfact.jpg"/></span>
+<br>
+<span onclick="openNav16()">&#9776; <img style="width:200px;height:150px"src="img/Ltrainfunfact.jpg"/></span>
+<span onclick="openNav17()">&#9776; <img style="width:200px;height:150px"src="img/Mtrainfunfact.jpg"/></span>
+<span onclick="openNav18()">&#9776; <img style="width:200px;height:150px"src="img/Ntrainfunfact.jpg"/></span>
+<br>
+<span onclick="openNav19()">&#9776; <img style="width:200px;height:150px"src="img/Qtrainfunfact.jpg"/></span>
+<span onclick="openNav20()">&#9776; <img style="width:200px;height:150px"src="img/Rtrainfunfact.jpg"/></span>
+<span onclick="openNav21()">&#9776; <img style="width:200px;height:150px"src="img/Ztrainfunfact.jpg"/></span>
+<br>
+<span onclick="openNav22()">&#9776; <img style="width:200px;height:150px"src="img/mtafunfact.jpg"/></span>
+<!-- -->
+<h2 id = "border">
+<a id="extra" href="funfacts.html"> Fun Facts </a>
+<a id="extra" href="aboutus.html"> About Us </a>
+</h2>
+</center>
+
+<script>
+function openNav() {document.getElementById("1").style.height = "100%";}
+function openNav2() {document.getElementById("2").style.height = "100%";}
+function openNav3() {document.getElementById("3").style.height = "100%";}
+function openNav4() {document.getElementById("4").style.height = "100%";}
+function openNav5() {document.getElementById("5").style.height = "100%";}
+function openNav6() {document.getElementById("6").style.height = "100%";}
+function openNav7() {document.getElementById("7").style.height = "100%";}
+function openNav8() {document.getElementById("A").style.height = "100%";}
+function openNav9() {document.getElementById("B").style.height = "100%";}
+function openNav10() {document.getElementById("C").style.height = "100%";}
+function openNav11() {document.getElementById("D").style.height = "100%";}
+function openNav12() {document.getElementById("E").style.height = "100%";}
+function openNav13() {document.getElementById("F").style.height = "100%";}
+function openNav14() {document.getElementById("G").style.height = "100%";}
+function openNav15() {document.getElementById("J").style.height = "100%";}
+function openNav16() {document.getElementById("L").style.height = "100%";}
+function openNav17() {document.getElementById("M").style.height = "100%";}
+function openNav18() {document.getElementById("N").style.height = "100%";}
+function openNav19() {document.getElementById("Q").style.height = "100%";}
+function openNav20() {document.getElementById("R").style.height = "100%";}
+function openNav21() {document.getElementById("Z").style.height = "100%";}
+function openNav22() {document.getElementById("MTA").style.height = "100%";}
+
+function closeNav() {document.getElementById("1").style.height = "0%";}
+function closeNav2() {document.getElementById("2").style.height = "0%";}
+function closeNav3() {document.getElementById("3").style.height = "0%";}
+function closeNav4() {document.getElementById("4").style.height = "0%";}
+function closeNav5() {document.getElementById("5").style.height = "0%";}
+function closeNav6() {document.getElementById("6").style.height = "0%";}
+function closeNav7() {document.getElementById("7").style.height = "0%";}
+function closeNav8() {document.getElementById("A").style.height = "0%";}
+function closeNav9() {document.getElementById("B").style.height = "0%";}
+function closeNav10() {document.getElementById("C").style.height = "0%";}
+function closeNav11() {document.getElementById("D").style.height = "0%";}
+function closeNav12() {document.getElementById("E").style.height = "0%";}
+function closeNav13() {document.getElementById("F").style.height = "0%";}
+function closeNav14() {document.getElementById("G").style.height = "0%";}
+function closeNav15() {document.getElementById("J").style.height = "0%";}
+function closeNav16() {document.getElementById("L").style.height = "0%";}
+function closeNav17() {document.getElementById("M").style.height = "0%";}
+function closeNav18() {document.getElementById("N").style.height = "0%";}
+function closeNav19() {document.getElementById("Q").style.height = "0%";}
+function closeNav20() {document.getElementById("R").style.height = "0%";}
+function closeNav21() {document.getElementById("Z").style.height = "0%";}
+function closeNav22() {document.getElementById("MTA").style.height = "0%";}
+</script>
+     
+</body>
+</html>
